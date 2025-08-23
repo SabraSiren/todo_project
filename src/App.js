@@ -36,6 +36,9 @@ export default function App() {
         setTasks(tasks.map((task) => (task.id === id ? {...task, done: !task.done} : task)))
     };
 
+    const moveCompletedToBottom = (tasks) => {
+        return [...tasks].sort((a, b) => a.done - b.done);
+    };
 
     return (
         <div className="app">
@@ -90,7 +93,7 @@ export default function App() {
                             </div>
                         </div>
                     ) : (
-                        tasks.map((task) => (
+                        moveCompletedToBottom(tasks).map((task) => (
                             <div key={task.id} className="todo-card">
                                 <div className="todo-card-content">
                                     <div className="todo-item">

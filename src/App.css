@@ -168,7 +168,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-yellow));
+  background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
   border-radius: 25px;
   font-size: 0.9rem;
   color: var(--dark-gray);
@@ -205,7 +205,7 @@
 }
 
 .todo-delete-button:hover {
-  color: var(--pastel-pink);
+  color: var(--pastel-purple);
   background: rgba(255, 179, 186, 0.2);
   transform: scale(1.1);
 }
@@ -241,7 +241,7 @@
 
 .todo-checkbox.checked {
   background: linear-gradient(135deg, var(--pastel-green), var(--pastel-blue));
-  border-color: var(--pastel-green);
+  border-color: var(--pastel-blue);
 }
 
 .todo-checkbox.checked::after {
@@ -256,7 +256,6 @@
 }
 
 .todo-text.completed {
-  text-decoration: line-through;
   color: var(--medium-gray);
   opacity: 0.7;
 }
